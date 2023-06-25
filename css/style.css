@@ -1,0 +1,194 @@
+@import "reset.css";
+
+.hidden {
+  display: none;
+}
+
+.backgroundImg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  opacity: 0.7;
+  padding: 5px 10px;
+}
+
+#weather {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  justify-content: end;
+  opacity: 1;
+}
+
+#weather img {
+  width: 40px;
+  height: 40px;
+}
+
+#login-form {
+  display: flex;
+  align-items: center;
+}
+
+#login-form input#name {
+  border-radius: 10px;
+  width: 200px;
+  height: 24px;
+  border-style: none;
+}
+
+#login-form input#name::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+#login-form input#submit {
+  display: none;
+}
+
+#login-form label i {
+  color: whitesmoke;
+  padding-left: 5px;
+  border-radius: 1px solid black;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+#clock {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+}
+
+#greeting {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+.task {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.task .toDo,
+.task .completed {
+  margin: 0 20px;
+  padding: 20px 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task .toDo span,
+.task .completed span {
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.task .toDo #todo-form {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.task .toDo input {
+  border-radius: 10px;
+  width: 320px;
+  height: 24px;
+  border-style: none;
+}
+
+.task .toDo input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+#todo-list,
+#completed-list {
+  padding: 10px 0;
+  width: 80%;
+  overflow-y: auto;
+}
+
+#todo-list li,
+#completed-list li {
+  padding: 5px 0;
+}
+
+#todo-list span,
+#completed-list span {
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+#todo-list button {
+  margin-right: 3px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.task .completed {
+  position: relative;
+}
+
+.task .completed #deleteAll {
+  color: white;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#completed-list li span {
+  text-decoration: line-through;
+}
+
+#quote {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#quote span {
+  padding-top: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #555;
+}
